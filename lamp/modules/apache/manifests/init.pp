@@ -1,6 +1,6 @@
 # Class: apache
 #
-# This module manages apache
+# This module manages the apache
 #
 # Parameters:
 #
@@ -12,6 +12,5 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class apache {
-
-
+  include apache::params, apache::install, apache::service
 }
