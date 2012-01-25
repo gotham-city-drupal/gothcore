@@ -18,6 +18,6 @@ class apache::service {
     hasstatus => true,
     hasrestart => true,
     enable => true,
-    require => Class["apache:install"],
+    require => Class["apache::install"],
   }
 }
