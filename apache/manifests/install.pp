@@ -14,6 +14,6 @@
 # [Remember: No empty lines between comments and class definition]
 class apache::install {
   package { $apache::params::apache_package:
-    ensure => "2.2.20"
+    ensure => present
   }
 }
