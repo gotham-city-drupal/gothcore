@@ -1,28 +1,28 @@
 {
-  "license": "UNKNOWN",
+  "license": "TBD",
   "source": "UNKNOWN",
   "types": [
 
   ],
-  "project_page": "UNKNOWN",
-  "description": "UNKNOWN",
+  "project_page": "gothamcitydrupal.com",
+  "description": "Contains config to build apache optimized for drupal development",
   "dependencies": [
 
   ],
-  "summary": "UNKNOWN",
-  "author": "pirog",
+  "summary": "Apache config",
+  "author": "gothamcitydrupal",
   "version": "0.0.1",
-  "name": "pirog-apache",
+  "name": "goth-apache",
   "checksums": {
-    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "manifests/params.pp": "2875873f983e2a0cd55ce4c0f097a237",
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
     "README": "183e7a15a07b6ee5f6d76619e1a02a21",
-    "manifests/service.pp": "5c7d5c5e6565a89bad84d9a0b5ab687b",
+    "manifests/service.pp": "bf4c11f43b4eb6c0cd91c1a62068dca6",
     "tests/init.pp": "4eac4a7ef68499854c54a78879e25535",
-    "manifests/install.pp": "d1d8e68586781ecf6a217bbd608f383b",
+    "manifests/install.pp": "208ac9ed2cf36eadf04fddb9692438ee",
+    "metadata.json": "9e6983adbef9afc31d4c2c3c10e2af25",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
-    "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
-    "manifests/init.pp": "1631246460d6de6aca9b0e456453d414",
-    "Modulefile": "7d31676b7a5e8d1d5f36ca6d37d37d6b"
+    "Modulefile": "172abfba6fdcaba94cfabdb1b4269503",
+    "manifests/init.pp": "1631246460d6de6aca9b0e456453d414"
   }
 }

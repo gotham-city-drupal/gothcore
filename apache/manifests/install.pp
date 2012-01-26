@@ -15,6 +15,10 @@
 class apache::install {
   package { $apache::params::apache_package:
     ensure => present,
-    allowcdrom => true,
+    
+    # If set to false, causes error if CD is listed in sources.list
+    # if set to true, causes debian (and maybe others) to hang during catalog run
+    #
+    #allowcdrom => true,
   }
 }
