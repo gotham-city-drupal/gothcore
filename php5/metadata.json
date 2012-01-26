@@ -5,21 +5,21 @@
 
   ],
   "project_page": "gothamcitydrupal.com",
-  "description": "Contains MySQL configuration optimized for drupal development",
+  "description": "Contains PHP5.3 configuration optimized for drupal development",
   "dependencies": [
 
   ],
-  "summary": "MySQL config",
+  "summary": "PHP5.3 config",
   "author": "gothamcitydrupal",
   "version": "1.0.0",
-  "name": "goth-mysql",
+  "name": "goth-php5",
   "checksums": {
     "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
-    "README": "5cb93c29a5c22b0a32c905758853e0c6",
-    "tests/init.pp": "6b34827ac4731829c8a117f0b3fb8167",
+    "README": "305be7fd903916f1f6b665030d69f9d7",
+    "tests/init.pp": "c4b5f09b6bbefeaaef1bbff6a94c4c0a",
     "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
-    "Modulefile": "ecc5dc34af2f35f3168cc850c46394a5",
-    "manifests/init.pp": "7abdf26390dc97f09628156f79bef450"
+    "Modulefile": "76232ec0e287aa8b045b4da26347dff6",
+    "manifests/init.pp": "aec6878aa8030e287558f90b637548a0"
   }
 }

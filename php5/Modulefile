@@ -1,10 +1,10 @@
-name    'goth-apache'
+name    'goth-php5'
 version '1.0.0'
 source 'pirog'
 author 'gothamcitydrupal'
 license 'TBD'
-summary 'Apache config'
-description 'Contains config to build apache optimized for drupal development'
+summary 'PHP5.3 config'
+description 'Contains PHP5.3 configuration optimized for drupal development'
 project_page 'gothamcitydrupal.com'
 
 ## Add dependencies, if any:

@@ -1,6 +1,6 @@
-# Class: php
+# Class: php5
 #
-# This module manages php
+# This module manages php5
 #
 # Parameters:
 #
@@ -11,7 +11,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class php {
+class php5 {
 
 
 }

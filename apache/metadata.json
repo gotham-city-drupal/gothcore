@@ -1,6 +1,6 @@
 {
   "license": "TBD",
-  "source": "UNKNOWN",
+  "source": "pirog",
   "types": [
 
   ],
@@ -11,7 +11,7 @@
   ],
   "summary": "Apache config",
   "author": "gothamcitydrupal",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "name": "goth-apache",
   "checksums": {
     "manifests/params.pp": "2875873f983e2a0cd55ce4c0f097a237",
@@ -20,9 +20,9 @@
     "manifests/service.pp": "bf4c11f43b4eb6c0cd91c1a62068dca6",
     "tests/init.pp": "4eac4a7ef68499854c54a78879e25535",
     "manifests/install.pp": "208ac9ed2cf36eadf04fddb9692438ee",
-    "metadata.json": "9e6983adbef9afc31d4c2c3c10e2af25",
+    "metadata.json": "d4b84d80617c6ff4107c1fc4767d25ad",
     "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
-    "Modulefile": "172abfba6fdcaba94cfabdb1b4269503",
+    "Modulefile": "e65e7163bc6f37c7ba87735f0f3d39d6",
     "manifests/init.pp": "1631246460d6de6aca9b0e456453d414"
   }
 }
