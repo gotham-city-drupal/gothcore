@@ -1,0 +1,11 @@
+name    'goth-puppet'
+version '1.0.0'
+source 'pirog'
+author 'gothamcitydrupal'
+license 'TBD'
+summary 'Puppet config'
+description 'Contains puppet configuration to optimize connection to gothcore'
+project_page 'gothamcitydrupal.com'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

@@ -1,0 +1,25 @@
+{
+  "license": "TBD",
+  "source": "pirog",
+  "types": [
+
+  ],
+  "project_page": "gothamcitydrupal.com",
+  "description": "Contains puppet configuration to optimize connection to gothcore",
+  "dependencies": [
+
+  ],
+  "summary": "Puppet config",
+  "author": "gothamcitydrupal",
+  "version": "1.0.0",
+  "name": "goth-puppet",
+  "checksums": {
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "README": "e30e196af8a7efd6eb4f0383fea5ecc0",
+    "tests/init.pp": "d2609a7f67522ad7f71f07be8070ecaa",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
+    "manifests/init.pp": "0c582670b2a7fb4598677b744f7ba4c8",
+    "Modulefile": "56b55856b90c55a1f17223b47511854c"
+  }
+}
