@@ -25,7 +25,7 @@ class puppet::config(
     }
     
     if $puppet::params::puppet_set_running {
-      file { "etc/default/puppet": 
+      file { "/etc/default/puppet": 
         ensure => present,
         source => "puppet:///modules/puppet/files/puppet",
         owner => "puppet",
