@@ -12,9 +12,9 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class puppet::config {
-    $puppetserver = "gothcore.gothamcitydrupal.com"  
-    
+class puppet::config(
+  $puppetserver = $puppet::params::puppetserver
+) inherits puppet::params {
     file { "/etc/puppet/puppet.conf":
       ensure => present,
       content => template("puppet/$puppet::params::puppet_conf_template"),
