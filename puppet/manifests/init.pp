@@ -13,5 +13,5 @@
 # [Remember: No empty lines between comments and class definition]
 
 class puppet {
-  include puppet::install, puppet::service
+  include puppet::params, puppet::install, puppet::config, puppet::service
 }
