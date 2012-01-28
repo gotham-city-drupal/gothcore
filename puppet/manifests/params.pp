@@ -5,6 +5,7 @@
 # Parameters:
 #   $puppet_conf_template - location of puppet configuration template to be used
 #   $puppet_server - location of the puppet master
+#   $puppet_set_running - binary representing whether start=yes needs to be set
 #
 # Actions:
 #
@@ -15,9 +16,6 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::params {
-  
-  $puppetserver = "gothcore.gothamcitydrupal.com"
-  
   case $operatingsystem {
     /(Debian|Ubuntu|Mint)/: {
       $puppet_conf_template = "puppet.debian.conf.erb"
