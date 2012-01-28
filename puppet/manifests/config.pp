@@ -27,7 +27,7 @@ class puppet::config(
     if $puppet::params::puppet_set_running {
       file { "/etc/default/puppet": 
         ensure => present,
-        source => "puppet:///modules/puppet/files/puppet",
+        source => "puppet:///modules/puppet/puppet",
         owner => "puppet",
         group => "puppet",
         require => Class["puppet::install"],
