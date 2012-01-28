@@ -13,9 +13,12 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::config {
+  
+  include puppet::params
+  
     file { "/etc/puppet/puppet.conf":
       ensure => present,
-      content => template($puppet::params::puppet_conf_template),
+      content => template("puppet/${$puppet_conf_template}"),
       owner => "puppet",
       group => "puppet",
       require => Class["puppet::install"],
