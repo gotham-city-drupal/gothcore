@@ -8,10 +8,9 @@
 #
 # Requires:
 #
-# Sample Usage:
+# Sample Usage: include puppet
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet {
-
-
+  include puppet::install, puppet::config, puppet::service
 }
