@@ -12,7 +12,9 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class puppet::config {  
+class puppet::config {
+    $puppetserver = "gothcore.gothamcitydrupal.com"  
+    
     file { "/etc/puppet/puppet.conf":
       ensure => present,
       content => template("puppet/$puppet::params::puppet_conf_template"),

@@ -15,9 +15,7 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class puppet::params {
-  $puppetserver = "gothcore.gothamcitydrupal.com"
-  
+class puppet::params {  
   case $operatingsystem {
     /(Debian|Ubuntu|Mint)/: {
       $puppet_conf_template = "puppet.debian.conf.erb"

@@ -15,5 +15,5 @@ postrun_command=/etc/puppet/etckeeper-commit-post
 
 [agent]
 report=true
-server=<%= puppet::params::puppetserver %>
+server=<%= puppetserver %>
 certname=<%= hostname %>.gothvm
