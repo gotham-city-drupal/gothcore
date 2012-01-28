@@ -16,7 +16,7 @@
 # [Remember: No empty lines between comments and class definition]
 class puppet::params {
   
-  $puppet_server = "gothcore.gothamcitydrupal.com"
+  $puppetserver = "gothcore.gothamcitydrupal.com"
   
   case $operatingsystem {
     /(Debian|Ubuntu|Mint)/: {
