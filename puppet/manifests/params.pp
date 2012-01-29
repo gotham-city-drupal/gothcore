@@ -20,8 +20,8 @@ class puppet::params {
   $puppetserver = "gothcore.gothamcitydrupal.com" 
   
   case $operatingsystem {
-    /(Debian|Ubuntu|Mint)/: {
-      $puppet_conf_template = "puppet.debian.conf.erb"
+    /(Ubuntu|Mint)/: {
+      $puppet_conf_template = "puppet.ubuntu.conf.erb"
       $puppet_set_running = true
     }
     /(RedHat|CentOS|Fedora)/: {

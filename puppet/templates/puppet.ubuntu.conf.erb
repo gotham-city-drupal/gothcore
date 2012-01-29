@@ -1,3 +1,8 @@
+# /etc/puppet/puppet.conf
+#
+# This file was created and transferred by puppet
+# Do not edit manually!
+
 [main]
 logdir=/var/log/puppet
 vardir=/var/lib/puppet
@@ -5,6 +10,8 @@ ssldir=/var/lib/puppet/ssl
 rundir=/var/run/puppet
 factpath=$vardir/lib/facter
 templatedir=$confdir/templates
+prerun_command=/etc/puppet/etckeeper-commit-pre
+postrun_command=/etc/puppet/etckeeper-commit-post
 
 [agent]
 report=true
