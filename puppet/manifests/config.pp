@@ -12,26 +12,17 @@
 # Sample Usage:
 #
 # [Remember: No empty lines between comments and class definition]
-class puppet::config(
+class puppet::config {
   $puppetserver = $puppet::params::puppetserver
-) inherits puppet::params {
-    file { "/etc/puppet/puppet.conf":
+    
+  if $puppet::params::puppet_set_running {
+    file { "/etc/default/puppet": 
       ensure => present,
-      content => template("puppet/$puppet::params::puppet_conf_template"),
+      source => "puppet:///modules/puppet/puppet",
       owner => "puppet",
       group => "puppet",
       require => Class["puppet::install"],
       notify => Class["puppet::service"],
     }
-    
-    if $puppet::params::puppet_set_running {
-      file { "/etc/default/puppet": 
-        ensure => present,
-        source => "puppet:///modules/puppet/puppet",
-        owner => "puppet",
-        group => "puppet",
-        require => Class["puppet::install"],
-        notify => Class["puppet::service"],
-      }
-    }
+  }
 }

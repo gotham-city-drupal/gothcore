@@ -21,15 +21,12 @@ class puppet::params {
   
   case $operatingsystem {
     /(Ubuntu|Mint)/: {
-      $puppet_conf_template = "puppet.ubuntu.conf.erb"
       $puppet_set_running = true
     }
     /(RedHat|CentOS|Fedora)/: {
-      $puppet_conf_template = "puppet.fedora.conf.erb"
       $puppet_set_running = false
     }
     default: {
-      $puppet_conf_template = "puppet.debian.conf.erb"
       $puppet_set_running = false
     }
   }
