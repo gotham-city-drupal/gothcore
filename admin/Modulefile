@@ -1,0 +1,11 @@
+name    'goth-admin'
+version '1.0.0'
+source 'pirog'
+author 'gothamcitydrupal'
+license 'TBD'
+summary 'Admin config'
+description 'Contains configuration to make using puppet easier'
+project_page 'gothamcitydrupal.com'
+
+## Add dependencies, if any:
+# dependency 'username/name', '>= 1.2.0'

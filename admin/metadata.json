@@ -1,0 +1,26 @@
+{
+  "license": "TBD",
+  "source": "pirog",
+  "types": [
+
+  ],
+  "project_page": "gothamcitydrupal.com",
+  "description": "Contains configuration to make using puppet easier",
+  "dependencies": [
+
+  ],
+  "summary": "Admin config",
+  "author": "gothamcitydrupal",
+  "version": "1.0.0",
+  "name": "goth-admin",
+  "checksums": {
+    "spec/spec_helper.rb": "ca19ec4f451ebc7fdb035b52eae6e909",
+    "README": "e3140fa7c1a5f394dccd725cdea9d42b",
+    "tests/init.pp": "559f068935f5a64c26e5d9259ed044ed",
+    "metadata.json": "d34d0b70aba36510fbc2df4e667479ef",
+    "manifests/augeas.pp": "16a7f8d5feee61b3b06eeb012a0482ee",
+    "spec/spec.opts": "a600ded995d948e393fbe2320ba8e51c",
+    "Modulefile": "c87066b3e65c306b317d748f89149f7b",
+    "manifests/init.pp": "09d9170cde8d64f0e356f55570bd337e"
+  }
+}
