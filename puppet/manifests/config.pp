@@ -13,14 +13,11 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::config {
-  include puppet::params
-  $puppetserver = $puppet::params::puppetserver
-  
   augeas {"puppet_set_defaults" :
     context => "/files/etc/default/puppet",
     changes => "set START yes",
     onlyif  => "get START == no",
     require => Class["admin::augeas"],
-    notify => Class["puppet::service"],
+    # this is stupid, don't ever do this -> notify => Class["puppet::service"],
   }
 }

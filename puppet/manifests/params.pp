@@ -16,7 +16,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::params {  
-  #TODO: not using params in other modules yet, this is a simple proof of concept
+  #TODO: not using params yet in other modules yet, this is a simple proof of concept but is not loaded yet
   $puppetserver = "gothcore.gothamcitydrupal.com" 
   case $operatingsystem {
     /(Debian|Ubuntu|Mint)/: {
