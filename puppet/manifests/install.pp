@@ -14,6 +14,6 @@
 # [Remember: No empty lines between comments and class definition]
 class puppet::install {
   package { "puppet" :
-    ensure => "latest",
+    ensure => "latest", 
   }
 }

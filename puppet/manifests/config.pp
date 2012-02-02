@@ -19,6 +19,7 @@ class puppet::config {
   augeas{"puppet_set_defaults" :
     context => "/etc/default/puppet",
     changes => "set START yes",
-    onlyif  => "match START == no",
+    onlyif  => "get START == no",
+    require => Class["admin::augeas"],
   }
 }
