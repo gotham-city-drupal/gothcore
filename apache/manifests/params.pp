@@ -15,6 +15,7 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class apache::params {
+  #TODO: not using params in other modules yet, this is a simple proof of concept
   case $operatingsystem {
     /(Debian|Ubuntu|Mint)/: {
       $apache_package = "apache2"

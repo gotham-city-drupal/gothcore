@@ -16,11 +16,10 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::params {  
-  
+  #TODO: not using params in other modules yet, this is a simple proof of concept
   $puppetserver = "gothcore.gothamcitydrupal.com" 
-  
   case $operatingsystem {
-    /(Ubuntu|Mint)/: {
+    /(Debian|Ubuntu|Mint)/: {
       $puppet_set_running = true
     }
     /(RedHat|CentOS|Fedora)/: {

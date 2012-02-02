@@ -13,16 +13,12 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::config {
+  include puppet::params
   $puppetserver = $puppet::params::puppetserver
-    
-  if $puppet::params::puppet_set_running {
-    file { "/etc/default/puppet": 
-      ensure => present,
-      source => "puppet:///modules/puppet/puppet",
-      owner => "puppet",
-      group => "puppet",
-      require => Class["puppet::install"],
-      notify => Class["puppet::service"],
-    }
+  
+  augeas{"puppet_set_defaults" :
+    context => "/etc/default/puppet",
+    changes => "set START yes",
+    onlyif  => "match START == no",
   }
 }
