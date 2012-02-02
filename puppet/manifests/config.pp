@@ -13,11 +13,25 @@
 #
 # [Remember: No empty lines between comments and class definition]
 class puppet::config {
-  augeas {"puppet_set_defaults" :
+  #CONFIG VARIABLES
+  $puppetserver = "gothcore.gothamcitydrupal.com"
+  $accessdomain = "gothdev"
+  $reporting_status = "TRUE"
+  
+  augeas { "puppet_set_defaults" :
     context => "/files/etc/default/puppet",
     changes => "set START yes",
-    onlyif  => "get START == no",
+    #onlyif  => "get START == no",
     require => Class["admin::augeas"],
-    # this is stupid, don't ever do this -> notify => Class["puppet::service"],
+    #this is stupid, don't ever do this -> notify => Class["puppet::service"],
   }
+  augeas { "puppet_set_conf" : 
+    context => "/files/etc/puppet/puppet.conf",
+    changes => [
+      "set server $puppetserver",
+      "set report $reporting_status",
+      "set certname $hostname.$accessdomain",
+    ],
+    require => Class["admin::augeas"], 
+  }  
 }
