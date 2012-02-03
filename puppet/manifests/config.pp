@@ -27,11 +27,7 @@ class puppet::config {
   }
   augeas { "puppet_set_conf" : 
     context => "/files/etc/puppet/puppet.conf",
-    changes => [
-      "set server $puppetserver",
-      "set report $reporting_status",
-      "set certname $hostname.$accessdomain",
-    ],
+    changes => "set certname $hostname.$accessdomain",
     require => Class["admin::augeas"], 
   }  
 }
