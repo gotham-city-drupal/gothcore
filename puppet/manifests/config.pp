@@ -26,7 +26,7 @@ class puppet::config {
     #this is stupid, don't ever do this -> notify => Class["puppet::service"],
   }
   augeas { "puppet_set_conf" : 
-    context => "/files/etc/puppet/puppet.conf",
+    context => "/files/etc/puppet/puppet.conf/master",
     changes => [
       "ins \\[agent\\] before certname"
     ],
